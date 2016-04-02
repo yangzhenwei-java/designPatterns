@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_exTCoJH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_ezh3QJH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_exTCoZH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_exTCopH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_exTCo5H1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_exTCpJH1EeOOF-MyncaEGg" name="responsibilitychain">
+          <packagedElement xmi:type="uml:Class" xmi:id="_exTCpZH1EeOOF-MyncaEGg" name="TLRequestHandle" clientDependency="_eyyQYJH1EeOOF-MyncaEGg">
+            <ownedAttribute xmi:id="_eyyQYZH1EeOOF-MyncaEGg" name="rh" visibility="package" type="_exczoJH1EeOOF-MyncaEGg" association="_e03UAJH1EeOOF-MyncaEGg"/>
+            <interfaceRealization xmi:id="_eyyQYJH1EeOOF-MyncaEGg" name="IRequestHandle" supplier="_exczoJH1EeOOF-MyncaEGg" client="_exTCpZH1EeOOF-MyncaEGg" contract="_exczoJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_ey8BYJH1EeOOF-MyncaEGg" name="handleRequest" visibility="public">
+              <ownedParameter xmi:id="_ey8BYZH1EeOOF-MyncaEGg" name="request" type="_exTCp5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_exTCppH1EeOOF-MyncaEGg" name="DimissionRequest" clientDependency="_ey8BYpH1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_ey8BYpH1EeOOF-MyncaEGg" name="IRequest" supplier="_exTCp5H1EeOOF-MyncaEGg" client="_exTCppH1EeOOF-MyncaEGg" contract="_exTCp5H1EeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_exTCp5H1EeOOF-MyncaEGg" name="IRequest"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_exTCqJH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_ezh3QZH1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_ezh3QpH1EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ezh3Q5H1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ezh3RJH1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_exTCqZH1EeOOF-MyncaEGg" name="LeaveRequest" clientDependency="_ezh3RZH1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_ezh3RZH1EeOOF-MyncaEGg" name="IRequest" supplier="_exTCp5H1EeOOF-MyncaEGg" client="_exTCqZH1EeOOF-MyncaEGg" contract="_exTCp5H1EeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_exTCqpH1EeOOF-MyncaEGg" name="HRRequestHandle" clientDependency="_ezh3RpH1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_ezh3RpH1EeOOF-MyncaEGg" name="IRequestHandle" supplier="_exczoJH1EeOOF-MyncaEGg" client="_exTCqpH1EeOOF-MyncaEGg" contract="_exczoJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_ezh3R5H1EeOOF-MyncaEGg" name="handleRequest" visibility="public">
+              <ownedParameter xmi:id="_ezh3SJH1EeOOF-MyncaEGg" name="request" type="_exTCp5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_exczoJH1EeOOF-MyncaEGg" name="IRequestHandle">
+            <ownedOperation xmi:id="_ezh3SZH1EeOOF-MyncaEGg" name="handleRequest" visibility="public">
+              <ownedParameter xmi:id="_ezh3SpH1EeOOF-MyncaEGg" name="request" type="_exTCp5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_exczoZH1EeOOF-MyncaEGg" name="PMRequestHandle" clientDependency="_ezh3S5H1EeOOF-MyncaEGg">
+            <ownedAttribute xmi:id="_ezh3TJH1EeOOF-MyncaEGg" name="rh" visibility="package" type="_exczoJH1EeOOF-MyncaEGg" association="_e03UApH1EeOOF-MyncaEGg"/>
+            <interfaceRealization xmi:id="_ezh3S5H1EeOOF-MyncaEGg" name="IRequestHandle" supplier="_exczoJH1EeOOF-MyncaEGg" client="_exczoZH1EeOOF-MyncaEGg" contract="_exczoJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_ezh3TZH1EeOOF-MyncaEGg" name="handleRequest" visibility="public">
+              <ownedParameter xmi:id="_ezh3TpH1EeOOF-MyncaEGg" name="request" type="_exTCp5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_exczopH1EeOOF-MyncaEGg" name="AddMoneyRequest" clientDependency="_ezh3T5H1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_ezh3T5H1EeOOF-MyncaEGg" name="IRequest" supplier="_exTCp5H1EeOOF-MyncaEGg" client="_exczopH1EeOOF-MyncaEGg" contract="_exTCp5H1EeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_e03UAJH1EeOOF-MyncaEGg" memberEnd="_eyyQYZH1EeOOF-MyncaEGg _e03UAZH1EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_e03UAZH1EeOOF-MyncaEGg" name="TLRequestHandle" type="_exTCpZH1EeOOF-MyncaEGg" association="_e03UAJH1EeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_e03UApH1EeOOF-MyncaEGg" memberEnd="_ezh3TJH1EeOOF-MyncaEGg _e03UA5H1EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_e03UA5H1EeOOF-MyncaEGg" name="PMRequestHandle" type="_exczoZH1EeOOF-MyncaEGg" association="_e03UApH1EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

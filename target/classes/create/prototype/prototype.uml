@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_LBV7oJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_LDkwQJH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LBV7oZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LBV7opH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LBV7o5H0EeOOF-MyncaEGg" name="create">
+        <packagedElement xmi:type="uml:Package" xmi:id="_LBV7pJH0EeOOF-MyncaEGg" name="prototype">
+          <packagedElement xmi:type="uml:Class" xmi:id="_LBV7pZH0EeOOF-MyncaEGg" name="Prototype">
+            <ownedAttribute xmi:id="_LDkwQZH0EeOOF-MyncaEGg" name="name" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_LDkwQpH0EeOOF-MyncaEGg" name="getName" visibility="public">
+              <ownedParameter xmi:id="_LDkwQ5H0EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_LDkwRJH0EeOOF-MyncaEGg" name="setName" visibility="public">
+              <ownedParameter xmi:id="_LDkwRZH0EeOOF-MyncaEGg" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_LDkwR5H0EeOOF-MyncaEGg" name="clone" visibility="public">
+              <ownedParameter xmi:id="_LDkwSJH0EeOOF-MyncaEGg" name="return" type="_LDkwRpH0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_LBV7ppH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_LDkwSZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_LDkwSpH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LDkwS5H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LDkwTJH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_LBV7p5H0EeOOF-MyncaEGg" name="ConcretePrototype">
+            <generalization xmi:id="_LDkwTZH0EeOOF-MyncaEGg" general="_LBV7pZH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_LDkwRpH0EeOOF-MyncaEGg" name="Object"/>
+</uml:Model>

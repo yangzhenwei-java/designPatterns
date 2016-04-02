@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_v5-3UJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_v8Nr8JH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_v5-3UZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_v6IoUJH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_v6IoUZH0EeOOF-MyncaEGg" name="structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_v6IoUpH0EeOOF-MyncaEGg" name="proxy">
+          <packagedElement xmi:type="uml:Class" xmi:id="_v6IoU5H0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_v8Nr8ZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_v8Nr8pH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v8Nr85H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v8Nr9JH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_v6IoVJH0EeOOF-MyncaEGg" name="Object" clientDependency="_v8Nr9ZH0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_v8Nr9ZH0EeOOF-MyncaEGg" name="IObject" supplier="_v6IoVpH0EeOOF-MyncaEGg" client="_v6IoVJH0EeOOF-MyncaEGg" contract="_v6IoVpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_v8Nr9pH0EeOOF-MyncaEGg" name="action" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_v6IoVZH0EeOOF-MyncaEGg" name="ProxyObject" clientDependency="_v8Nr95H0EeOOF-MyncaEGg">
+            <ownedAttribute xmi:id="_v8Nr-JH0EeOOF-MyncaEGg" name="obj" visibility="package" type="_v6IoVJH0EeOOF-MyncaEGg" association="_v9jIsJH0EeOOF-MyncaEGg"/>
+            <interfaceRealization xmi:id="_v8Nr95H0EeOOF-MyncaEGg" name="IObject" supplier="_v6IoVpH0EeOOF-MyncaEGg" client="_v6IoVZH0EeOOF-MyncaEGg" contract="_v6IoVpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_v8Nr-ZH0EeOOF-MyncaEGg" name="action" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_v6IoVpH0EeOOF-MyncaEGg" name="IObject">
+            <ownedOperation xmi:id="_v8Nr-pH0EeOOF-MyncaEGg" name="action" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_v9jIsJH0EeOOF-MyncaEGg" memberEnd="_v8Nr-JH0EeOOF-MyncaEGg _v9jIsZH0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_v9jIsZH0EeOOF-MyncaEGg" name="ProxyObject" type="_v6IoVZH0EeOOF-MyncaEGg" association="_v9jIsJH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

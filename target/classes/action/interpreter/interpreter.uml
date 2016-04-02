@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_CmuqUJH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_CpHP_pH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CmuqUZH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CmuqUpH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CmuqU5H1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_CmuqVJH1EeOOF-MyncaEGg" name="interpreter">
+          <packagedElement xmi:type="uml:Class" xmi:id="_CmuqVZH1EeOOF-MyncaEGg" name="Context">
+            <ownedAttribute xmi:id="_CpHP_5H1EeOOF-MyncaEGg" name="content" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_CpHQAZH1EeOOF-MyncaEGg" name="list" visibility="private" type="_CpHQAJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_CpHQApH1EeOOF-MyncaEGg" name="setContent" visibility="public">
+              <ownedParameter xmi:id="_CpHQA5H1EeOOF-MyncaEGg" name="content">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_CpHQBJH1EeOOF-MyncaEGg" name="getContent" visibility="public">
+              <ownedParameter xmi:id="_CpHQBZH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_CpHQBpH1EeOOF-MyncaEGg" name="add" visibility="public">
+              <ownedParameter xmi:id="_CpHQB5H1EeOOF-MyncaEGg" name="eps" type="_CmuqVpH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_CpRA8JH1EeOOF-MyncaEGg" name="getList" visibility="public">
+              <ownedParameter xmi:id="_CpRA8ZH1EeOOF-MyncaEGg" name="return" type="_CoN4E5H1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_CmuqVpH1EeOOF-MyncaEGg" name="Expression" isAbstract="true">
+            <ownedOperation xmi:id="_CpRA8pH1EeOOF-MyncaEGg" name="interpret" visibility="package" isAbstract="true">
+              <ownedParameter xmi:id="_CpRA85H1EeOOF-MyncaEGg" name="ctx" type="_CmuqVZH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Cm4bUJH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_CpRA9JH1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_CpRA9ZH1EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CpRA9pH1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CpRA95H1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Cm4bUZH1EeOOF-MyncaEGg" name="SimpleExpression">
+            <generalization xmi:id="_CpRA-JH1EeOOF-MyncaEGg" general="_CmuqVpH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_CpRA-ZH1EeOOF-MyncaEGg" name="interpret" visibility="package">
+              <ownedParameter xmi:id="_CpRA-pH1EeOOF-MyncaEGg" name="ctx" type="_CmuqVZH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Cm4bUpH1EeOOF-MyncaEGg" name="AdvanceExpression">
+            <generalization xmi:id="_CpRA-5H1EeOOF-MyncaEGg" general="_CmuqVpH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_CpRA_JH1EeOOF-MyncaEGg" name="interpret" visibility="package">
+              <ownedParameter xmi:id="_CpRA_ZH1EeOOF-MyncaEGg" name="ctx" type="_CmuqVZH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CoN4EJH1EeOOF-MyncaEGg" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CoN4EZH1EeOOF-MyncaEGg" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CoN4EpH1EeOOF-MyncaEGg" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CoN4E5H1EeOOF-MyncaEGg" name="List"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_CpHQAJH1EeOOF-MyncaEGg" name="List&lt;Expression>"/>
+</uml:Model>

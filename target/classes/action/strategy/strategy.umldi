@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_juCpcJH1EeOOF-MyncaEGg" activeDiagram="_juCpcZH1EeOOF-MyncaEGg">
+  <model href="strategy.uml#_jo-jQJH1EeOOF-MyncaEGg"/>
+  <diagrams xmi:id="_juCpcZH1EeOOF-MyncaEGg" position="0,0" size="100,100" name="strategy" viewport="0,0">
+    <property xmi:id="_j3an4JH1EeOOF-MyncaEGg" key="pageFormatName" value="A4"/>
+    <property xmi:id="_j3an4ZH1EeOOF-MyncaEGg" key="diagramWidth" value="840"/>
+    <property xmi:id="_j3an4pH1EeOOF-MyncaEGg" key="diagramHeight" value="1188"/>
+    <property xmi:id="_j3an45H1EeOOF-MyncaEGg" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_j3an5JH1EeOOF-MyncaEGg" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_j3an5ZH1EeOOF-MyncaEGg" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_j3an5pH1EeOOF-MyncaEGg" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_j3an55H1EeOOF-MyncaEGg" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_j3an6JH1EeOOF-MyncaEGg" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_juCpcpH1EeOOF-MyncaEGg" presentation="org.topcased.modeler.uml.classdiagram">
+      <element href="strategy.uml#_jo-jQJH1EeOOF-MyncaEGg"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_j6-5QJH1EeOOF-MyncaEGg" position="35,34" size="594,877">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5QZH1EeOOF-MyncaEGg" presentation="default">
+        <element href="strategy.uml#_jo-jQZH1EeOOF-MyncaEGg"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_j6-5QpH1EeOOF-MyncaEGg" position="15,11" size="564,815">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5Q5H1EeOOF-MyncaEGg" presentation="default">
+          <element href="strategy.uml#_jo-jQpH1EeOOF-MyncaEGg"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_j6-5RJH1EeOOF-MyncaEGg" position="15,11" size="534,753">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5RZH1EeOOF-MyncaEGg" presentation="default">
+            <element href="strategy.uml#_jo-jQ5H1EeOOF-MyncaEGg"/>
+          </semanticModel>
+          <contained xsi:type="di:GraphNode" xmi:id="_j6-5RpH1EeOOF-MyncaEGg" position="15,11" size="504,691">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5R5H1EeOOF-MyncaEGg" presentation="default">
+              <element href="strategy.uml#_jo-jRJH1EeOOF-MyncaEGg"/>
+            </semanticModel>
+            <contained xsi:type="di:GraphNode" xmi:id="_j6-5SJH1EeOOF-MyncaEGg" position="195,220" size="107,-1">
+              <anchorage xmi:id="_j7R0MJH1EeOOF-MyncaEGg" graphEdge="_j7R0MpH1EeOOF-MyncaEGg _j7R0PZH1EeOOF-MyncaEGg _j7R0QZH1EeOOF-MyncaEGg _j7R0RZH1EeOOF-MyncaEGg"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5SZH1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jo-jRZH1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_j6-5SpH1EeOOF-MyncaEGg">
+                <property xmi:id="_j6-5S5H1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="37"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5TJH1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jo-jRZH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_j6-5TZH1EeOOF-MyncaEGg">
+                <property xmi:id="_j6-5TpH1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="47"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5T5H1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jo-jRZH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_j7IqWJH1EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqWZH1EeOOF-MyncaEGg" presentation="default">
+                    <element href="strategy.uml#_jqniAJH1EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphNode" xmi:id="_j6-5UJH1EeOOF-MyncaEGg" position="197,45" size="104,-1">
+              <anchorage xmi:id="_j7R0PJH1EeOOF-MyncaEGg" graphEdge="_j7R0PZH1EeOOF-MyncaEGg"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5UZH1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jo-jRpH1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_j6-5UpH1EeOOF-MyncaEGg">
+                <property xmi:id="_j6-5U5H1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="37"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5VJH1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jo-jRpH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_j6-5VZH1EeOOF-MyncaEGg">
+                <property xmi:id="_j6-5VpH1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="47"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5V5H1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jo-jRpH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_j7IqWpH1EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqW5H1EeOOF-MyncaEGg" presentation="default">
+                    <element href="strategy.uml#_jqniApH1EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphNode" xmi:id="_j6-5WJH1EeOOF-MyncaEGg" position="197,395" size="104,-1">
+              <anchorage xmi:id="_j7R0QJH1EeOOF-MyncaEGg" graphEdge="_j7R0QZH1EeOOF-MyncaEGg"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5WZH1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jo-jR5H1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_j6-5WpH1EeOOF-MyncaEGg">
+                <property xmi:id="_j6-5W5H1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="37"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5XJH1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jo-jR5H1EeOOF-MyncaEGg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_j6-5XZH1EeOOF-MyncaEGg">
+                <property xmi:id="_j6-5XpH1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="47"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j6-5X5H1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jo-jR5H1EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_j7IqXJH1EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqXZH1EeOOF-MyncaEGg" presentation="default">
+                    <element href="strategy.uml#_jqniBJH1EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphNode" xmi:id="_j7IqQJH1EeOOF-MyncaEGg" position="369,220" size="110,-1">
+              <anchorage xmi:id="_j7R0MZH1EeOOF-MyncaEGg" graphEdge="_j7R0MpH1EeOOF-MyncaEGg"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqQZH1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jo-jSJH1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_j7IqQpH1EeOOF-MyncaEGg">
+                <property xmi:id="_j7IqQ5H1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="37"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqRJH1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jo-jSJH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_j7IqXpH1EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqX5H1EeOOF-MyncaEGg" presentation="default">
+                    <element href="strategy.uml#_jqniBZH1EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_j7IqRZH1EeOOF-MyncaEGg">
+                <property xmi:id="_j7IqRpH1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="47"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqR5H1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jo-jSJH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_j7IqYJH1EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqYZH1EeOOF-MyncaEGg" presentation="default">
+                    <element href="strategy.uml#_jqniBpH1EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphNode" xmi:id="_j7IqSJH1EeOOF-MyncaEGg" position="22,220" size="104,-1">
+              <anchorage xmi:id="_j7R0RJH1EeOOF-MyncaEGg" graphEdge="_j7R0RZH1EeOOF-MyncaEGg"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqSZH1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jpIUQJH1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_j7IqSpH1EeOOF-MyncaEGg">
+                <property xmi:id="_j7IqS5H1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="37"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqTJH1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jpIUQJH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_j7IqTZH1EeOOF-MyncaEGg">
+                <property xmi:id="_j7IqTpH1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="47"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqT5H1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jpIUQJH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_j7IqYpH1EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqY5H1EeOOF-MyncaEGg" presentation="default">
+                    <element href="strategy.uml#_jqniCJH1EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphNode" xmi:id="_j7IqUJH1EeOOF-MyncaEGg" position="15,570" size="194,-1">
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqUZH1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jpIUQZH1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_j7IqUpH1EeOOF-MyncaEGg">
+                <property xmi:id="_j7IqU5H1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="37"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqVJH1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jpIUQZH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_j7IqVZH1EeOOF-MyncaEGg">
+                <property xmi:id="_j7IqVpH1EeOOF-MyncaEGg" key="eStructuralFeatureID" value="47"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqV5H1EeOOF-MyncaEGg" presentation="default">
+                  <element href="strategy.uml#_jpIUQZH1EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_j7IqZJH1EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7IqZZH1EeOOF-MyncaEGg" presentation="default">
+                    <element href="strategy.uml#_jrXI9ZH1EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphEdge" xmi:id="_j7R0MpH1EeOOF-MyncaEGg" anchor="_j7R0MJH1EeOOF-MyncaEGg _j7R0MZH1EeOOF-MyncaEGg">
+              <property xmi:id="_j9D84JH1EeOOF-MyncaEGg" key="router" value="Automatic"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7R0M5H1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jssloJH1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_j7R0NJH1EeOOF-MyncaEGg" id="srcNameEdgeObject" uDistance="10" vDistance="10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_j7R0NZH1EeOOF-MyncaEGg" id="srcPropertiesEdgeObject" uDistance="25" vDistance="10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_j7R0NpH1EeOOF-MyncaEGg" id="srcCountEdgeObject" uDistance="10" vDistance="-10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_j7R0N5H1EeOOF-MyncaEGg" id="targetNameEdgeObject" uDistance="10" vDistance="10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_j7R0OJH1EeOOF-MyncaEGg" id="targetPropertiesEdgeObject" uDistance="25" vDistance="10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_j7R0OZH1EeOOF-MyncaEGg" id="targetCountEdgeObject" uDistance="10" vDistance="-10"/>
+              <contained xsi:type="di:EdgeObjectOffset" xmi:id="_j7R0OpH1EeOOF-MyncaEGg" visible="false" id="middleNameEdgeObject" offset="0,10"/>
+              <contained xsi:type="di:EdgeObjectOffset" xmi:id="_j7R0O5H1EeOOF-MyncaEGg" id="stereotypeEdgeObject" offset="0,-10"/>
+            </contained>
+            <contained xsi:type="di:GraphEdge" xmi:id="_j7R0PZH1EeOOF-MyncaEGg" anchor="_j7R0PJH1EeOOF-MyncaEGg _j7R0MJH1EeOOF-MyncaEGg">
+              <property xmi:id="_j9D84ZH1EeOOF-MyncaEGg" key="router" value="Automatic"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7R0PpH1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jqniAZH1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:EdgeObjectOffset" xmi:id="_j7R0P5H1EeOOF-MyncaEGg" id="stereotypeEdgeObject"/>
+            </contained>
+            <contained xsi:type="di:GraphEdge" xmi:id="_j7R0QZH1EeOOF-MyncaEGg" anchor="_j7R0QJH1EeOOF-MyncaEGg _j7R0MJH1EeOOF-MyncaEGg">
+              <property xmi:id="_j9D84pH1EeOOF-MyncaEGg" key="router" value="Automatic"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7R0QpH1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jqniA5H1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:EdgeObjectOffset" xmi:id="_j7R0Q5H1EeOOF-MyncaEGg" id="stereotypeEdgeObject"/>
+            </contained>
+            <contained xsi:type="di:GraphEdge" xmi:id="_j7R0RZH1EeOOF-MyncaEGg" anchor="_j7R0RJH1EeOOF-MyncaEGg _j7R0MJH1EeOOF-MyncaEGg">
+              <property xmi:id="_j9D845H1EeOOF-MyncaEGg" key="router" value="Automatic"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_j7R0RpH1EeOOF-MyncaEGg" presentation="default">
+                <element href="strategy.uml#_jqniB5H1EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:EdgeObjectOffset" xmi:id="_j7R0R5H1EeOOF-MyncaEGg" id="stereotypeEdgeObject"/>
+            </contained>
+          </contained>
+        </contained>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

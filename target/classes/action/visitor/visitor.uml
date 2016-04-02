@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_r1RPQJH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_r3gEJJH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_r3pN15H1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:id="_r3pN2ZH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_r1RPQZH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_r1RPQpH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_r1RPQ5H1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_r1RPRJH1EeOOF-MyncaEGg" name="visitor">
+          <packagedElement xmi:type="uml:Class" xmi:id="_r1RPRZH1EeOOF-MyncaEGg" name="ConcreteVisitor" clientDependency="_r2wdAZH1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_r2wdAZH1EeOOF-MyncaEGg" name="IVisitor" supplier="_r1RPRpH1EeOOF-MyncaEGg" client="_r1RPRZH1EeOOF-MyncaEGg" contract="_r1RPRpH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_r2wdApH1EeOOF-MyncaEGg" name="visitCollection" visibility="public">
+              <ownedParameter xmi:id="_r2wdA5H1EeOOF-MyncaEGg" name="collection" type="_r2msApH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_r2wdBJH1EeOOF-MyncaEGg" name="visitFloat" visibility="public">
+              <ownedParameter xmi:id="_r2wdBZH1EeOOF-MyncaEGg" name="floatE" type="_r1aZMZH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_r2wdBpH1EeOOF-MyncaEGg" name="visitString" visibility="public">
+              <ownedParameter xmi:id="_r2wdB5H1EeOOF-MyncaEGg" name="stringE" type="_r1RPR5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_r1RPRpH1EeOOF-MyncaEGg" name="IVisitor">
+            <ownedOperation xmi:id="_r2wdCJH1EeOOF-MyncaEGg" name="visitString" visibility="public">
+              <ownedParameter xmi:id="_r2wdCZH1EeOOF-MyncaEGg" name="stringE" type="_r1RPR5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_r2wdCpH1EeOOF-MyncaEGg" name="visitFloat" visibility="public">
+              <ownedParameter xmi:id="_r2wdC5H1EeOOF-MyncaEGg" name="floatE" type="_r1aZMZH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_r2wdDJH1EeOOF-MyncaEGg" name="visitCollection" visibility="public">
+              <ownedParameter xmi:id="_r2wdDZH1EeOOF-MyncaEGg" name="collection" type="_r2msApH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_r1RPR5H1EeOOF-MyncaEGg" name="StringElement" clientDependency="_r2wdDpH1EeOOF-MyncaEGg">
+            <ownedAttribute xmi:id="_r3gEJZH1EeOOF-MyncaEGg" name="se" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_r2wdDpH1EeOOF-MyncaEGg" name="IVisitable" supplier="_r1aZMJH1EeOOF-MyncaEGg" client="_r1RPR5H1EeOOF-MyncaEGg" contract="_r1aZMJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_r3gEJpH1EeOOF-MyncaEGg" name="getSe" visibility="public">
+              <ownedParameter xmi:id="_r3gEJ5H1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_r3gEKJH1EeOOF-MyncaEGg" name="accept" visibility="public">
+              <ownedParameter xmi:id="_r3gEKZH1EeOOF-MyncaEGg" name="visitor" type="_r1RPRpH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_r1RPSJH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_r3pN0JH1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_r3pN0ZH1EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r3pN0pH1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r3pN05H1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_r1aZMJH1EeOOF-MyncaEGg" name="IVisitable">
+            <ownedOperation xmi:id="_r3pN1JH1EeOOF-MyncaEGg" name="accept" visibility="public">
+              <ownedParameter xmi:id="_r3pN1ZH1EeOOF-MyncaEGg" name="visitor" type="_r1RPRpH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_r1aZMZH1EeOOF-MyncaEGg" name="FloatElement" clientDependency="_r3pN1pH1EeOOF-MyncaEGg">
+            <ownedAttribute xmi:id="_r3pN2JH1EeOOF-MyncaEGg" name="fe" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_r3pN1pH1EeOOF-MyncaEGg" name="IVisitable" supplier="_r1aZMJH1EeOOF-MyncaEGg" client="_r1aZMZH1EeOOF-MyncaEGg" contract="_r1aZMJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_r3pN2pH1EeOOF-MyncaEGg" name="getFe" visibility="public">
+              <ownedParameter xmi:id="_r3pN25H1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_r3pN3JH1EeOOF-MyncaEGg" name="accept" visibility="public">
+              <ownedParameter xmi:id="_r3pN3ZH1EeOOF-MyncaEGg" name="visitor" type="_r1RPRpH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_r2msAJH1EeOOF-MyncaEGg" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_r2msAZH1EeOOF-MyncaEGg" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_r2msApH1EeOOF-MyncaEGg" name="Collection"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_r2msA5H1EeOOF-MyncaEGg" name="Iterator"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_r2msBJH1EeOOF-MyncaEGg" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_r2wdAJH1EeOOF-MyncaEGg" name="List"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

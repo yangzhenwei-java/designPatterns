@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_GULMcJH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_GWjyLpH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_GWjyOJH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_GWjyPZH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_GULMcZH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_GULMcpH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_GULMc5H1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GULMdJH1EeOOF-MyncaEGg" name="iterator">
+          <packagedElement xmi:type="uml:Class" xmi:id="_GULMdZH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_GWjyL5H1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_GWjyMJH1EeOOF-MyncaEGg" name="arg0">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GWjyMZH1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GWjyMpH1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_GULMdpH1EeOOF-MyncaEGg" name="IIterator">
+            <ownedOperation xmi:id="_GWjyNJH1EeOOF-MyncaEGg" name="next" visibility="public">
+              <ownedParameter xmi:id="_GWjyNZH1EeOOF-MyncaEGg" name="return" type="_GWjyM5H1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_GWjyNpH1EeOOF-MyncaEGg" name="first" visibility="public"/>
+            <ownedOperation xmi:id="_GWjyN5H1EeOOF-MyncaEGg" name="last" visibility="public"/>
+            <ownedOperation xmi:id="_GWjyOZH1EeOOF-MyncaEGg" name="hasNext" visibility="public">
+              <ownedParameter xmi:id="_GWjyOpH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GULMd5H1EeOOF-MyncaEGg" name="Iterator" clientDependency="_GWjyO5H1EeOOF-MyncaEGg">
+            <ownedAttribute xmi:id="_GWjyPJH1EeOOF-MyncaEGg" name="list" visibility="private" type="_GULMeJH1EeOOF-MyncaEGg" association="_GYC_0JH1EeOOF-MyncaEGg"/>
+            <ownedAttribute xmi:id="_GWjyPpH1EeOOF-MyncaEGg" name="index" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_GWjyO5H1EeOOF-MyncaEGg" name="IIterator" supplier="_GULMdpH1EeOOF-MyncaEGg" client="_GULMd5H1EeOOF-MyncaEGg" contract="_GULMdpH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_GWjyP5H1EeOOF-MyncaEGg" name="first" visibility="public"/>
+            <ownedOperation xmi:id="_GWtjEJH1EeOOF-MyncaEGg" name="last" visibility="public"/>
+            <ownedOperation xmi:id="_GWtjEZH1EeOOF-MyncaEGg" name="next" visibility="public">
+              <ownedParameter xmi:id="_GWtjEpH1EeOOF-MyncaEGg" name="return" type="_GWjyM5H1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_GWtjE5H1EeOOF-MyncaEGg" name="hasNext" visibility="public">
+              <ownedParameter xmi:id="_GWtjFJH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_GULMeJH1EeOOF-MyncaEGg" name="IList">
+            <ownedOperation xmi:id="_GWtjFZH1EeOOF-MyncaEGg" name="iterator" visibility="public">
+              <ownedParameter xmi:id="_GWtjFpH1EeOOF-MyncaEGg" name="return" type="_GULMdpH1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_GWtjF5H1EeOOF-MyncaEGg" name="get" visibility="public">
+              <ownedParameter xmi:id="_GWtjGJH1EeOOF-MyncaEGg" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_GWtjGZH1EeOOF-MyncaEGg" name="return" type="_GWjyM5H1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_GWtjGpH1EeOOF-MyncaEGg" name="getSize" visibility="public">
+              <ownedParameter xmi:id="_GWtjG5H1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_GWtjHJH1EeOOF-MyncaEGg" name="add" visibility="public">
+              <ownedParameter xmi:id="_GWtjHZH1EeOOF-MyncaEGg" name="obj" type="_GWjyM5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GULMeZH1EeOOF-MyncaEGg" name="List" clientDependency="_GWtjHpH1EeOOF-MyncaEGg">
+            <ownedAttribute xmi:id="_GWtjH5H1EeOOF-MyncaEGg" name="list" visibility="private" type="_GWjyM5H1EeOOF-MyncaEGg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GWtjIJH1EeOOF-MyncaEGg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GWtjIZH1EeOOF-MyncaEGg"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_GW2tAJH1EeOOF-MyncaEGg" name="index" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_GW2tAZH1EeOOF-MyncaEGg" name="size" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_GWtjHpH1EeOOF-MyncaEGg" name="IList" supplier="_GULMeJH1EeOOF-MyncaEGg" client="_GULMeZH1EeOOF-MyncaEGg" contract="_GULMeJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_GW2tApH1EeOOF-MyncaEGg" name="iterator" visibility="public">
+              <ownedParameter xmi:id="_GW2tA5H1EeOOF-MyncaEGg" name="return" type="_GULMd5H1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_GW2tBJH1EeOOF-MyncaEGg" name="get" visibility="public">
+              <ownedParameter xmi:id="_GW2tBZH1EeOOF-MyncaEGg" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_GW2tBpH1EeOOF-MyncaEGg" name="return" type="_GWjyM5H1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_GW2tB5H1EeOOF-MyncaEGg" name="getSize" visibility="public">
+              <ownedParameter xmi:id="_GW2tCJH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_GW2tCZH1EeOOF-MyncaEGg" name="add" visibility="public">
+              <ownedParameter xmi:id="_GW2tCpH1EeOOF-MyncaEGg" name="obj" type="_GWjyM5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_GYC_0JH1EeOOF-MyncaEGg" memberEnd="_GWjyPJH1EeOOF-MyncaEGg _GYC_0ZH1EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_GYC_0ZH1EeOOF-MyncaEGg" name="Iterator" type="_GULMd5H1EeOOF-MyncaEGg" association="_GYC_0JH1EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_GWjyM5H1EeOOF-MyncaEGg" name="Object"/>
+</uml:Model>

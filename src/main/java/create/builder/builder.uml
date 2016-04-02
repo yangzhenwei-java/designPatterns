@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_EEzAQJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_EHehDpH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_EEzAQZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_EEzAQpH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_EEzAQ5H0EeOOF-MyncaEGg" name="create">
+        <packagedElement xmi:type="uml:Package" xmi:id="_EEzARJH0EeOOF-MyncaEGg" name="builder">
+          <packagedElement xmi:type="uml:Class" xmi:id="_EEzARZH0EeOOF-MyncaEGg" name="PersonDirector">
+            <ownedOperation xmi:id="_EGlwAJH0EeOOF-MyncaEGg" name="constructPerson" visibility="public">
+              <ownedParameter xmi:id="_EGlwAZH0EeOOF-MyncaEGg" name="pb" type="_EE8xQJH0EeOOF-MyncaEGg"/>
+              <ownedParameter xmi:id="_EGlwApH0EeOOF-MyncaEGg" name="return" type="_EE8xQZH0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_EEzARpH0EeOOF-MyncaEGg" name="ManBuilder" clientDependency="_EGlwA5H0EeOOF-MyncaEGg">
+            <ownedAttribute xmi:id="_EGlwBJH0EeOOF-MyncaEGg" name="person" visibility="package" type="_EE8xQZH0EeOOF-MyncaEGg" association="_EI9ukJH0EeOOF-MyncaEGg"/>
+            <interfaceRealization xmi:id="_EGlwA5H0EeOOF-MyncaEGg" name="IPersonBuilder" supplier="_EE8xQJH0EeOOF-MyncaEGg" client="_EEzARpH0EeOOF-MyncaEGg" contract="_EE8xQJH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_EGlwBZH0EeOOF-MyncaEGg" name="buildHead" visibility="public"/>
+            <ownedOperation xmi:id="_EGlwBpH0EeOOF-MyncaEGg" name="buildBody" visibility="public"/>
+            <ownedOperation xmi:id="_EGlwB5H0EeOOF-MyncaEGg" name="buildFoot" visibility="public"/>
+            <ownedOperation xmi:id="_EGlwCJH0EeOOF-MyncaEGg" name="buildPerson" visibility="public">
+              <ownedParameter xmi:id="_EGlwCZH0EeOOF-MyncaEGg" name="return" type="_EE8xQZH0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_EEzAR5H0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_EHehD5H0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_EHehEJH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EHehEZH0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EHehEpH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_EE8xQJH0EeOOF-MyncaEGg" name="IPersonBuilder">
+            <ownedOperation xmi:id="_EHehE5H0EeOOF-MyncaEGg" name="buildHead" visibility="public"/>
+            <ownedOperation xmi:id="_EHehFJH0EeOOF-MyncaEGg" name="buildBody" visibility="public"/>
+            <ownedOperation xmi:id="_EHehFZH0EeOOF-MyncaEGg" name="buildFoot" visibility="public"/>
+            <ownedOperation xmi:id="_EHehFpH0EeOOF-MyncaEGg" name="buildPerson" visibility="public">
+              <ownedParameter xmi:id="_EHehF5H0EeOOF-MyncaEGg" name="return" type="_EE8xQZH0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_EE8xQZH0EeOOF-MyncaEGg" name="Person">
+            <ownedAttribute xmi:id="_EHehGJH0EeOOF-MyncaEGg" name="head" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_EHoR0JH0EeOOF-MyncaEGg" name="body" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_EHoR0ZH0EeOOF-MyncaEGg" name="foot" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_EHoR0pH0EeOOF-MyncaEGg" name="getHead" visibility="public">
+              <ownedParameter xmi:id="_EHoR05H0EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EHoR1JH0EeOOF-MyncaEGg" name="setHead" visibility="public">
+              <ownedParameter xmi:id="_EHoR1ZH0EeOOF-MyncaEGg" name="head">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EHoR1pH0EeOOF-MyncaEGg" name="getBody" visibility="public">
+              <ownedParameter xmi:id="_EHoR15H0EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EHoR2JH0EeOOF-MyncaEGg" name="setBody" visibility="public">
+              <ownedParameter xmi:id="_EHoR2ZH0EeOOF-MyncaEGg" name="body">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EHoR2pH0EeOOF-MyncaEGg" name="getFoot" visibility="public">
+              <ownedParameter xmi:id="_EHoR25H0EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_EHxbwJH0EeOOF-MyncaEGg" name="setFoot" visibility="public">
+              <ownedParameter xmi:id="_EHxbwZH0EeOOF-MyncaEGg" name="foot">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_EE8xQpH0EeOOF-MyncaEGg" name="Man">
+            <generalization xmi:id="_EHxbwpH0EeOOF-MyncaEGg" general="_EE8xQZH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_EI9ukJH0EeOOF-MyncaEGg" memberEnd="_EGlwBJH0EeOOF-MyncaEGg _EI9ukZH0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_EI9ukZH0EeOOF-MyncaEGg" name="ManBuilder" type="_EEzARpH0EeOOF-MyncaEGg" association="_EI9ukJH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

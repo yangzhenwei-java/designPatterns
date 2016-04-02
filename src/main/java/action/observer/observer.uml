@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_bEJbcJH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_bGYQVJH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bEJbcZH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_bEJbcpH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_bEJbc5H1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_bEJbdJH1EeOOF-MyncaEGg" name="observer">
+          <packagedElement xmi:type="uml:Class" xmi:id="_bEJbdZH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_bGYQVZH1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_bGYQVpH1EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bGYQV5H1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGYQWJH1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_bEJbdpH1EeOOF-MyncaEGg" name="HuangpuCitizen">
+            <generalization xmi:id="_bGiBEJH1EeOOF-MyncaEGg" general="_bETMc5H1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_bGiBEZH1EeOOF-MyncaEGg" name="sendMessage" visibility="public">
+              <ownedParameter xmi:id="_bGiBEpH1EeOOF-MyncaEGg" name="help">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_bETMcJH1EeOOF-MyncaEGg" name="HuangpuPoliceman" clientDependency="_bGiBE5H1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_bGiBE5H1EeOOF-MyncaEGg" name="IPoliceman" supplier="_bETMcpH1EeOOF-MyncaEGg" client="_bETMcJH1EeOOF-MyncaEGg" contract="_bETMcpH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_bGiBFJH1EeOOF-MyncaEGg" name="action" visibility="public">
+              <ownedParameter xmi:id="_bGiBFZH1EeOOF-MyncaEGg" name="ci" type="_bETMc5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_bETMcZH1EeOOF-MyncaEGg" name="TianhePoliceman" clientDependency="_bGiBFpH1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_bGiBFpH1EeOOF-MyncaEGg" name="IPoliceman" supplier="_bETMcpH1EeOOF-MyncaEGg" client="_bETMcZH1EeOOF-MyncaEGg" contract="_bETMcpH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_bGiBF5H1EeOOF-MyncaEGg" name="action" visibility="public">
+              <ownedParameter xmi:id="_bGiBGJH1EeOOF-MyncaEGg" name="ci" type="_bETMc5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_bETMcpH1EeOOF-MyncaEGg" name="IPoliceman">
+            <ownedOperation xmi:id="_bGiBGZH1EeOOF-MyncaEGg" name="action" visibility="public">
+              <ownedParameter xmi:id="_bGiBGpH1EeOOF-MyncaEGg" name="ci" type="_bETMc5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_bETMc5H1EeOOF-MyncaEGg" name="Citizen" isAbstract="true">
+            <ownedAttribute xmi:id="_bGiBHJH1EeOOF-MyncaEGg" name="pols" visibility="package" type="_bGiBG5H1EeOOF-MyncaEGg"/>
+            <ownedAttribute xmi:id="_bGiBHZH1EeOOF-MyncaEGg" name="help" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_bGiBHpH1EeOOF-MyncaEGg" value="normal"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_bGiBH5H1EeOOF-MyncaEGg" name="setHelp" visibility="public">
+              <ownedParameter xmi:id="_bGiBIJH1EeOOF-MyncaEGg" name="help">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_bGiBIZH1EeOOF-MyncaEGg" name="getHelp" visibility="public">
+              <ownedParameter xmi:id="_bGiBIpH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_bGiBI5H1EeOOF-MyncaEGg" name="sendMessage" visibility="package" isAbstract="true">
+              <ownedParameter xmi:id="_bGiBJJH1EeOOF-MyncaEGg" name="help">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_bGrLAJH1EeOOF-MyncaEGg" name="setPolicemen" visibility="public"/>
+            <ownedOperation xmi:id="_bGrLAZH1EeOOF-MyncaEGg" name="register" visibility="public">
+              <ownedParameter xmi:id="_bGrLApH1EeOOF-MyncaEGg" name="pol" type="_bETMcpH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_bGrLA5H1EeOOF-MyncaEGg" name="unRegister" visibility="public">
+              <ownedParameter xmi:id="_bGrLBJH1EeOOF-MyncaEGg" name="pol" type="_bETMcpH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_bETMdJH1EeOOF-MyncaEGg" name="TianheCitizen">
+            <generalization xmi:id="_bGrLBZH1EeOOF-MyncaEGg" general="_bETMc5H1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_bGrLBpH1EeOOF-MyncaEGg" name="sendMessage" visibility="public">
+              <ownedParameter xmi:id="_bGrLB5H1EeOOF-MyncaEGg" name="help">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bFffQJH1EeOOF-MyncaEGg" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_bFffQZH1EeOOF-MyncaEGg" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_bFffQpH1EeOOF-MyncaEGg" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_bFffQ5H1EeOOF-MyncaEGg" name="List"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_bGiBG5H1EeOOF-MyncaEGg" name="List&lt;IPoliceman>"/>
+</uml:Model>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_hIAbUJH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_hJ8VUZH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_hIAbUZH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_hIAbUpH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_hIAbU5H1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_hIAbVJH1EeOOF-MyncaEGg" name="state">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_hIAbVZH1EeOOF-MyncaEGg" name="IWeather">
+            <ownedOperation xmi:id="_hJ8VUpH1EeOOF-MyncaEGg" name="getWeather" visibility="public">
+              <ownedParameter xmi:id="_hJ8VU5H1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_hIAbVpH1EeOOF-MyncaEGg" name="Rain" clientDependency="_hJ8VVJH1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_hJ8VVJH1EeOOF-MyncaEGg" name="IWeather" supplier="_hIAbVZH1EeOOF-MyncaEGg" client="_hIAbVpH1EeOOF-MyncaEGg" contract="_hIAbVZH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_hJ8VVZH1EeOOF-MyncaEGg" name="getWeather" visibility="public">
+              <ownedParameter xmi:id="_hJ8VVpH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_hIAbV5H1EeOOF-MyncaEGg" name="Sunshine" clientDependency="_hKFe8JH1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_hKFe8JH1EeOOF-MyncaEGg" name="IWeather" supplier="_hIAbVZH1EeOOF-MyncaEGg" client="_hIAbV5H1EeOOF-MyncaEGg" contract="_hIAbVZH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_hKFe8ZH1EeOOF-MyncaEGg" name="getWeather" visibility="public">
+              <ownedParameter xmi:id="_hKFe8pH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_hIAbWJH1EeOOF-MyncaEGg" name="Context">
+            <ownedAttribute xmi:id="_hKFe85H1EeOOF-MyncaEGg" name="weather" visibility="private" type="_hIAbVZH1EeOOF-MyncaEGg" association="_hLRxwJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_hKFe9JH1EeOOF-MyncaEGg" name="setWeather" visibility="public">
+              <ownedParameter xmi:id="_hKFe9ZH1EeOOF-MyncaEGg" name="weather" type="_hIAbVZH1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hKFe9pH1EeOOF-MyncaEGg" name="getWeather" visibility="public">
+              <ownedParameter xmi:id="_hKFe95H1EeOOF-MyncaEGg" name="return" type="_hIAbVZH1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_hKFe-JH1EeOOF-MyncaEGg" name="weatherMessage" visibility="public">
+              <ownedParameter xmi:id="_hKFe-ZH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_hIAbWZH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_hKFe-pH1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_hKFe-5H1EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hKFe_JH1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hKFe_ZH1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_hLRxwJH1EeOOF-MyncaEGg" memberEnd="_hKFe85H1EeOOF-MyncaEGg _hLRxwZH1EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_hLRxwZH1EeOOF-MyncaEGg" name="Context" type="_hIAbWJH1EeOOF-MyncaEGg" association="_hLRxwJH1EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

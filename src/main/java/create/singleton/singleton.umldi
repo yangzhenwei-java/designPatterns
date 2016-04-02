@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_OEPE4JH0EeOOF-MyncaEGg" activeDiagram="_OEPE4ZH0EeOOF-MyncaEGg">
+  <model href="singleton.uml#_N_oRsJH0EeOOF-MyncaEGg"/>
+  <diagrams xmi:id="_OEPE4ZH0EeOOF-MyncaEGg" position="0,0" size="100,100" name="singleton" viewport="0,0">
+    <property xmi:id="_OOplIJH0EeOOF-MyncaEGg" key="pageFormatName" value="A4"/>
+    <property xmi:id="_OOplIZH0EeOOF-MyncaEGg" key="diagramWidth" value="840"/>
+    <property xmi:id="_OOplIpH0EeOOF-MyncaEGg" key="diagramHeight" value="1188"/>
+    <property xmi:id="_OOplI5H0EeOOF-MyncaEGg" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_OOplJJH0EeOOF-MyncaEGg" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_OOplJZH0EeOOF-MyncaEGg" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_OOplJpH0EeOOF-MyncaEGg" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_OOplJ5H0EeOOF-MyncaEGg" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_OOplKJH0EeOOF-MyncaEGg" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OEPE4pH0EeOOF-MyncaEGg" presentation="org.topcased.modeler.uml.classdiagram">
+      <element href="singleton.uml#_N_oRsJH0EeOOF-MyncaEGg"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_OSrJgJH0EeOOF-MyncaEGg" position="35,34" size="384,527">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OSrJgZH0EeOOF-MyncaEGg" presentation="default">
+        <element href="singleton.uml#_N_oRsZH0EeOOF-MyncaEGg"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_OSrJgpH0EeOOF-MyncaEGg" position="15,11" size="354,465">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OSrJg5H0EeOOF-MyncaEGg" presentation="default">
+          <element href="singleton.uml#_N_oRspH0EeOOF-MyncaEGg"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_OSrJhJH0EeOOF-MyncaEGg" position="15,11" size="324,403">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OSrJhZH0EeOOF-MyncaEGg" presentation="default">
+            <element href="singleton.uml#_N_oRs5H0EeOOF-MyncaEGg"/>
+          </semanticModel>
+          <contained xsi:type="di:GraphNode" xmi:id="_OSrJhpH0EeOOF-MyncaEGg" position="15,11" size="294,341">
+            <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OSrJh5H0EeOOF-MyncaEGg" presentation="default">
+              <element href="singleton.uml#_N_oRtJH0EeOOF-MyncaEGg"/>
+            </semanticModel>
+            <contained xsi:type="di:GraphNode" xmi:id="_OSrJiJH0EeOOF-MyncaEGg" position="15,220" size="194,-1">
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OSrJiZH0EeOOF-MyncaEGg" presentation="default">
+                <element href="singleton.uml#_N_oRtZH0EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_OSrJipH0EeOOF-MyncaEGg">
+                <property xmi:id="_OSrJi5H0EeOOF-MyncaEGg" key="eStructuralFeatureID" value="37"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OSrJjJH0EeOOF-MyncaEGg" presentation="default">
+                  <element href="singleton.uml#_N_oRtZH0EeOOF-MyncaEGg"/>
+                </semanticModel>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_OSrJjZH0EeOOF-MyncaEGg">
+                <property xmi:id="_OSrJjpH0EeOOF-MyncaEGg" key="eStructuralFeatureID" value="47"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OSrJj5H0EeOOF-MyncaEGg" presentation="default">
+                  <element href="singleton.uml#_N_oRtZH0EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_OS0TeJH0EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OS0TeZH0EeOOF-MyncaEGg" presentation="default">
+                    <element href="singleton.uml#_OB3Gg5H0EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphNode" xmi:id="_OS0TcJH0EeOOF-MyncaEGg" position="60,45" size="215,-1">
+              <anchorage xmi:id="_OS0TfpH0EeOOF-MyncaEGg" graphEdge="_OS0TgJH0EeOOF-MyncaEGg"/>
+              <anchorage xmi:id="_OS0Tf5H0EeOOF-MyncaEGg" graphEdge="_OS0TgJH0EeOOF-MyncaEGg"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OS0TcZH0EeOOF-MyncaEGg" presentation="default">
+                <element href="singleton.uml#_N_xboJH0EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:GraphNode" xmi:id="_OS0TcpH0EeOOF-MyncaEGg">
+                <property xmi:id="_OS0Tc5H0EeOOF-MyncaEGg" key="eStructuralFeatureID" value="37"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OS0TdJH0EeOOF-MyncaEGg" presentation="default">
+                  <element href="singleton.uml#_N_xboJH0EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_OS0TepH0EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OS0Te5H0EeOOF-MyncaEGg" presentation="default">
+                    <element href="singleton.uml#_OB3Gh5H0EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+              <contained xsi:type="di:GraphNode" xmi:id="_OS0TdZH0EeOOF-MyncaEGg">
+                <property xmi:id="_OS0TdpH0EeOOF-MyncaEGg" key="eStructuralFeatureID" value="47"/>
+                <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OS0Td5H0EeOOF-MyncaEGg" presentation="default">
+                  <element href="singleton.uml#_N_xboJH0EeOOF-MyncaEGg"/>
+                </semanticModel>
+                <contained xsi:type="di:GraphNode" xmi:id="_OS0TfJH0EeOOF-MyncaEGg" position="0,0" size="-1,-1">
+                  <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OS0TfZH0EeOOF-MyncaEGg" presentation="default">
+                    <element href="singleton.uml#_OB3GiJH0EeOOF-MyncaEGg"/>
+                  </semanticModel>
+                </contained>
+              </contained>
+            </contained>
+            <contained xsi:type="di:GraphEdge" xmi:id="_OS0TgJH0EeOOF-MyncaEGg" anchor="_OS0TfpH0EeOOF-MyncaEGg _OS0Tf5H0EeOOF-MyncaEGg">
+              <property xmi:id="_OTj6UJH0EeOOF-MyncaEGg" key="router" value="Automatic"/>
+              <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_OS0TgZH0EeOOF-MyncaEGg" presentation="default">
+                <element href="singleton.uml#_ODCyEJH0EeOOF-MyncaEGg"/>
+              </semanticModel>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_OS0TgpH0EeOOF-MyncaEGg" id="srcNameEdgeObject" uDistance="10" vDistance="10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_OS0Tg5H0EeOOF-MyncaEGg" id="srcPropertiesEdgeObject" uDistance="25" vDistance="10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_OS0ThJH0EeOOF-MyncaEGg" id="srcCountEdgeObject" uDistance="10" vDistance="-10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_OS0ThZH0EeOOF-MyncaEGg" id="targetNameEdgeObject" uDistance="10" vDistance="10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_OS0ThpH0EeOOF-MyncaEGg" id="targetPropertiesEdgeObject" uDistance="25" vDistance="10"/>
+              <contained xsi:type="di:EdgeObjectUV" xmi:id="_OS0Th5H0EeOOF-MyncaEGg" id="targetCountEdgeObject" uDistance="10" vDistance="-10"/>
+              <contained xsi:type="di:EdgeObjectOffset" xmi:id="_OS0TiJH0EeOOF-MyncaEGg" visible="false" id="middleNameEdgeObject" offset="0,10"/>
+              <contained xsi:type="di:EdgeObjectOffset" xmi:id="_OS0TiZH0EeOOF-MyncaEGg" id="stereotypeEdgeObject" offset="0,-10"/>
+            </contained>
+          </contained>
+        </contained>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

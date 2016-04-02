@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_rBjv0JH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_rD7uYJH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_rBjv0ZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_rBjv0pH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_rBjv05H0EeOOF-MyncaEGg" name="structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_rBjv1JH0EeOOF-MyncaEGg" name="facade">
+          <packagedElement xmi:type="uml:Class" xmi:id="_rBjv1ZH0EeOOF-MyncaEGg" name="ServiceC" clientDependency="_rDC9kJH0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_rDC9kJH0EeOOF-MyncaEGg" name="IServiceC" supplier="_rBs5xZH0EeOOF-MyncaEGg" client="_rBjv1ZH0EeOOF-MyncaEGg" contract="_rBs5xZH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_rDC9kZH0EeOOF-MyncaEGg" name="methodC" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_rBs5wJH0EeOOF-MyncaEGg" name="ServiceB" clientDependency="_rDC9kpH0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_rDC9kpH0EeOOF-MyncaEGg" name="IServiceB" supplier="_rBs5xJH0EeOOF-MyncaEGg" client="_rBs5wJH0EeOOF-MyncaEGg" contract="_rBs5xJH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_rDC9k5H0EeOOF-MyncaEGg" name="methodB" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_rBs5wZH0EeOOF-MyncaEGg" name="Facade">
+            <ownedAttribute xmi:id="_rDC9lJH0EeOOF-MyncaEGg" name="sa" visibility="package" type="_rBs5w5H0EeOOF-MyncaEGg" association="_rFRLIJH0EeOOF-MyncaEGg"/>
+            <ownedAttribute xmi:id="_rDMHgJH0EeOOF-MyncaEGg" name="sb" visibility="package" type="_rBs5xJH0EeOOF-MyncaEGg" association="_rFRLIpH0EeOOF-MyncaEGg"/>
+            <ownedAttribute xmi:id="_rDMHgZH0EeOOF-MyncaEGg" name="sc" visibility="package" type="_rBs5xZH0EeOOF-MyncaEGg" association="_rFRLJJH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_rDMHgpH0EeOOF-MyncaEGg" name="methodA" visibility="public"/>
+            <ownedOperation xmi:id="_rDMHg5H0EeOOF-MyncaEGg" name="methodB" visibility="public"/>
+            <ownedOperation xmi:id="_rDMHhJH0EeOOF-MyncaEGg" name="methodC" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_rBs5wpH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_rD7uYZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_rD7uYpH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rD7uY5H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rD7uZJH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_rBs5w5H0EeOOF-MyncaEGg" name="IServiceA">
+            <ownedOperation xmi:id="_rEFfYJH0EeOOF-MyncaEGg" name="methodA" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_rBs5xJH0EeOOF-MyncaEGg" name="IServiceB">
+            <ownedOperation xmi:id="_rEFfYZH0EeOOF-MyncaEGg" name="methodB" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_rBs5xZH0EeOOF-MyncaEGg" name="IServiceC">
+            <ownedOperation xmi:id="_rEFfYpH0EeOOF-MyncaEGg" name="methodC" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_rBs5xpH0EeOOF-MyncaEGg" name="ServiceA" clientDependency="_rEFfY5H0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_rEFfY5H0EeOOF-MyncaEGg" name="IServiceA" supplier="_rBs5w5H0EeOOF-MyncaEGg" client="_rBs5xpH0EeOOF-MyncaEGg" contract="_rBs5w5H0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_rEFfZJH0EeOOF-MyncaEGg" name="methodA" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_rFRLIJH0EeOOF-MyncaEGg" memberEnd="_rDC9lJH0EeOOF-MyncaEGg _rFRLIZH0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_rFRLIZH0EeOOF-MyncaEGg" name="Facade" type="_rBs5wZH0EeOOF-MyncaEGg" association="_rFRLIJH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_rFRLIpH0EeOOF-MyncaEGg" memberEnd="_rDMHgJH0EeOOF-MyncaEGg _rFRLI5H0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_rFRLI5H0EeOOF-MyncaEGg" name="Facade" type="_rBs5wZH0EeOOF-MyncaEGg" association="_rFRLIpH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_rFRLJJH0EeOOF-MyncaEGg" memberEnd="_rDMHgZH0EeOOF-MyncaEGg _rFRLJZH0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_rFRLJZH0EeOOF-MyncaEGg" name="Facade" type="_rBs5wZH0EeOOF-MyncaEGg" association="_rFRLJJH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

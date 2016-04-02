@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_TKplEJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_TNCK9JH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_TKplEZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_TKplEpH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_TKplE5H0EeOOF-MyncaEGg" name="structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_TKplFJH0EeOOF-MyncaEGg" name="adapter">
+          <packagedElement xmi:type="uml:Class" xmi:id="_TKplFZH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_TNCK9ZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_TNCK9pH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TNCK95H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TNCK-JH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_TKplFpH0EeOOF-MyncaEGg" name="ITarget">
+            <ownedOperation xmi:id="_TNLUoJH0EeOOF-MyncaEGg" name="adapteeMethod" visibility="public"/>
+            <ownedOperation xmi:id="_TNLUoZH0EeOOF-MyncaEGg" name="adapterMethod" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_TKzWEJH0EeOOF-MyncaEGg" name="Adapter" clientDependency="_TNLUopH0EeOOF-MyncaEGg">
+            <ownedAttribute xmi:id="_TNLUo5H0EeOOF-MyncaEGg" name="adaptee" visibility="private" type="_TKzWEZH0EeOOF-MyncaEGg" association="_TOXncJH0EeOOF-MyncaEGg"/>
+            <interfaceRealization xmi:id="_TNLUopH0EeOOF-MyncaEGg" name="ITarget" supplier="_TKplFpH0EeOOF-MyncaEGg" client="_TKzWEJH0EeOOF-MyncaEGg" contract="_TKplFpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_TNLUpJH0EeOOF-MyncaEGg" name="adapteeMethod" visibility="public"/>
+            <ownedOperation xmi:id="_TNLUpZH0EeOOF-MyncaEGg" name="adapterMethod" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_TKzWEZH0EeOOF-MyncaEGg" name="Adaptee">
+            <ownedOperation xmi:id="_TNLUppH0EeOOF-MyncaEGg" name="adpateeMethod" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_TOXncJH0EeOOF-MyncaEGg" memberEnd="_TNLUo5H0EeOOF-MyncaEGg _TOXncZH0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_TOXncZH0EeOOF-MyncaEGg" name="Adapter" type="_TKzWEJH0EeOOF-MyncaEGg" association="_TOXncJH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

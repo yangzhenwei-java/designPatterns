@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ijHj4JH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_ilpTtJH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ijRU4JH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ijRU4ZH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ijRU4pH0EeOOF-MyncaEGg" name="structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ijRU45H0EeOOF-MyncaEGg" name="bridge">
+          <packagedElement xmi:type="uml:Class" xmi:id="_ijRU5JH0EeOOF-MyncaEGg" name="Lady">
+            <generalization xmi:id="_ik5skJH0EeOOF-MyncaEGg" general="_ijRU6ZH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_ik5skZH0EeOOF-MyncaEGg" name="dress" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ijRU5ZH0EeOOF-MyncaEGg" name="Jacket">
+            <generalization xmi:id="_ik5skpH0EeOOF-MyncaEGg" general="_ijRU5pH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_ik5sk5H0EeOOF-MyncaEGg" name="personDressCloth" visibility="public">
+              <ownedParameter xmi:id="_ik5slJH0EeOOF-MyncaEGg" name="person" type="_ijRU6ZH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ijRU5pH0EeOOF-MyncaEGg" name="Clothing" isAbstract="true">
+            <ownedOperation xmi:id="_ik5slZH0EeOOF-MyncaEGg" name="personDressCloth" visibility="public" isAbstract="true">
+              <ownedParameter xmi:id="_ik5slpH0EeOOF-MyncaEGg" name="person" type="_ijRU6ZH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ijRU55H0EeOOF-MyncaEGg" name="Trouser">
+            <generalization xmi:id="_ik5sl5H0EeOOF-MyncaEGg" general="_ijRU5pH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_ik5smJH0EeOOF-MyncaEGg" name="personDressCloth" visibility="public">
+              <ownedParameter xmi:id="_ik5smZH0EeOOF-MyncaEGg" name="person" type="_ijRU6ZH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ijRU6JH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_ilpTtZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_ilpTtpH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ilpTt5H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ilpTuJH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ijRU6ZH0EeOOF-MyncaEGg" name="Person" isAbstract="true">
+            <ownedAttribute xmi:id="_ilpTuZH0EeOOF-MyncaEGg" name="clothing" visibility="private" type="_ijRU5pH0EeOOF-MyncaEGg" association="_inSSMJH0EeOOF-MyncaEGg"/>
+            <ownedAttribute xmi:id="_ilpTupH0EeOOF-MyncaEGg" name="type" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_ilpTu5H0EeOOF-MyncaEGg" name="getClothing" visibility="public">
+              <ownedParameter xmi:id="_ilpTvJH0EeOOF-MyncaEGg" name="return" type="_ijRU5pH0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_ilzEcJH0EeOOF-MyncaEGg" name="setClothing" visibility="public">
+              <ownedParameter xmi:id="_ilzEcZH0EeOOF-MyncaEGg" name="clothing" type="_ijRU5pH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_ilzEcpH0EeOOF-MyncaEGg" name="getType" visibility="public">
+              <ownedParameter xmi:id="_ilzEc5H0EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_ilzEdJH0EeOOF-MyncaEGg" name="setType" visibility="public">
+              <ownedParameter xmi:id="_ilzEdZH0EeOOF-MyncaEGg" name="type">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_ilzEdpH0EeOOF-MyncaEGg" name="dress" visibility="public" isAbstract="true"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ijRU6pH0EeOOF-MyncaEGg" name="Man">
+            <generalization xmi:id="_ilzEd5H0EeOOF-MyncaEGg" general="_ijRU6ZH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_ilzEeJH0EeOOF-MyncaEGg" name="dress" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_inSSMJH0EeOOF-MyncaEGg" memberEnd="_ilpTuZH0EeOOF-MyncaEGg _inSSMZH0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_inSSMZH0EeOOF-MyncaEGg" name="Person" type="_ijRU6ZH0EeOOF-MyncaEGg" association="_inSSMJH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

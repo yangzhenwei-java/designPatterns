@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ob0coJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_oef9dJH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ob9mkJH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ob9mkZH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ob9mkpH0EeOOF-MyncaEGg" name="structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ob9mk5H0EeOOF-MyncaEGg" name="decorator">
+          <packagedElement xmi:type="uml:Class" xmi:id="_ob9mlJH0EeOOF-MyncaEGg" name="Man" clientDependency="_odmlUJH0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_odmlUJH0EeOOF-MyncaEGg" name="IPerson" supplier="_ob9mlpH0EeOOF-MyncaEGg" client="_ob9mlJH0EeOOF-MyncaEGg" contract="_ob9mlpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_odmlUZH0EeOOF-MyncaEGg" name="eat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ob9mlZH0EeOOF-MyncaEGg" name="ManDecoratorB">
+            <generalization xmi:id="_odmlUpH0EeOOF-MyncaEGg" general="_ob9ml5H0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_odmlU5H0EeOOF-MyncaEGg" name="eat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ob9mlpH0EeOOF-MyncaEGg" name="IPerson">
+            <ownedOperation xmi:id="_odwWUJH0EeOOF-MyncaEGg" name="eat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ob9ml5H0EeOOF-MyncaEGg" name="Decorator" clientDependency="_odwWUZH0EeOOF-MyncaEGg" isAbstract="true">
+            <ownedAttribute xmi:id="_odwWUpH0EeOOF-MyncaEGg" name="person" visibility="protected" type="_ob9mlpH0EeOOF-MyncaEGg" association="_ofro8JH0EeOOF-MyncaEGg"/>
+            <interfaceRealization xmi:id="_odwWUZH0EeOOF-MyncaEGg" name="IPerson" supplier="_ob9mlpH0EeOOF-MyncaEGg" client="_ob9ml5H0EeOOF-MyncaEGg" contract="_ob9mlpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_odwWU5H0EeOOF-MyncaEGg" name="setPerson" visibility="public">
+              <ownedParameter xmi:id="_odwWVJH0EeOOF-MyncaEGg" name="person" type="_ob9mlpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_odwWVZH0EeOOF-MyncaEGg" name="eat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ob9mmJH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_oef9dZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_oef9dpH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oef9d5H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oef9eJH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ob9mmZH0EeOOF-MyncaEGg" name="ManDecoratorA">
+            <generalization xmi:id="_oef9eZH0EeOOF-MyncaEGg" general="_ob9ml5H0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_oef9epH0EeOOF-MyncaEGg" name="eat" visibility="public"/>
+            <ownedOperation xmi:id="_oef9e5H0EeOOF-MyncaEGg" name="reEat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_ofro8JH0EeOOF-MyncaEGg" memberEnd="_odwWUpH0EeOOF-MyncaEGg _ofro8ZH0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_ofro8ZH0EeOOF-MyncaEGg" name="Decorator" type="_ob9ml5H0EeOOF-MyncaEGg" association="_ofro8JH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

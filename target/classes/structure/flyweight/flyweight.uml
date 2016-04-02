@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_tpOVoJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_trm7QJH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_trm7SpH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_tpOVoZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_tpOVopH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_tpOVo5H0EeOOF-MyncaEGg" name="structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_tpOVpJH0EeOOF-MyncaEGg" name="flyweight">
+          <packagedElement xmi:type="uml:Class" xmi:id="_tpOVpZH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_trm7QZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_trm7QpH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_trm7Q5H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_trm7RJH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tpOVppH0EeOOF-MyncaEGg" name="FlyweightFactory">
+            <ownedAttribute xmi:id="_trm7RpH0EeOOF-MyncaEGg" name="flyweights" visibility="private" isStatic="true" type="_trm7RZH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_trm7R5H0EeOOF-MyncaEGg" name="getFlyweight" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_trm7SJH0EeOOF-MyncaEGg" name="key">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_trm7SZH0EeOOF-MyncaEGg" name="return" type="_tpOVqJH0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_trm7S5H0EeOOF-MyncaEGg" name="getSize" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_trm7TJH0EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tpOVp5H0EeOOF-MyncaEGg" name="Flyweight" clientDependency="_trm7TZH0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_trm7TZH0EeOOF-MyncaEGg" name="IFlyweight" supplier="_tpOVqJH0EeOOF-MyncaEGg" client="_tpOVp5H0EeOOF-MyncaEGg" contract="_tpOVqJH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_trm7TpH0EeOOF-MyncaEGg" name="action" visibility="public">
+              <ownedParameter xmi:id="_trm7T5H0EeOOF-MyncaEGg" name="arg">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_tpOVqJH0EeOOF-MyncaEGg" name="IFlyweight">
+            <ownedOperation xmi:id="_trm7UJH0EeOOF-MyncaEGg" name="action" visibility="public">
+              <ownedParameter xmi:id="_trm7UZH0EeOOF-MyncaEGg" name="arg">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_tqtjYJH0EeOOF-MyncaEGg" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_tqtjYZH0EeOOF-MyncaEGg" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_tqtjYpH0EeOOF-MyncaEGg" name="HashMap"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_tqtjY5H0EeOOF-MyncaEGg" name="Map"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_trm7RZH0EeOOF-MyncaEGg" name="Map&lt;String,IFlyweight>"/>
+</uml:Model>

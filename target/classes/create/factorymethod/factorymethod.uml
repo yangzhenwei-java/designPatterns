@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_H-l8UJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_IA-iNJH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_H-l8UZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_H-l8UpH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_H-l8U5H0EeOOF-MyncaEGg" name="create">
+        <packagedElement xmi:type="uml:Package" xmi:id="_H-l8VJH0EeOOF-MyncaEGg" name="factorymethod">
+          <packagedElement xmi:type="uml:Class" xmi:id="_H-l8VZH0EeOOF-MyncaEGg" name="TeacherWork" clientDependency="_IAO7EJH0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_IAO7EJH0EeOOF-MyncaEGg" name="IWork" supplier="_H-l8V5H0EeOOF-MyncaEGg" client="_H-l8VZH0EeOOF-MyncaEGg" contract="_H-l8V5H0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_IAO7EZH0EeOOF-MyncaEGg" name="doWork" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_H-l8VpH0EeOOF-MyncaEGg" name="IWorkFactory">
+            <ownedOperation xmi:id="_IAO7EpH0EeOOF-MyncaEGg" name="getWork" visibility="public">
+              <ownedParameter xmi:id="_IAO7E5H0EeOOF-MyncaEGg" name="return" type="_H-l8V5H0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_H-l8V5H0EeOOF-MyncaEGg" name="IWork">
+            <ownedOperation xmi:id="_IAO7FJH0EeOOF-MyncaEGg" name="doWork" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_H-l8WJH0EeOOF-MyncaEGg" name="StudentWorkFactory" clientDependency="_IAO7FZH0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_IAO7FZH0EeOOF-MyncaEGg" name="IWorkFactory" supplier="_H-l8VpH0EeOOF-MyncaEGg" client="_H-l8WJH0EeOOF-MyncaEGg" contract="_H-l8VpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_IAO7FpH0EeOOF-MyncaEGg" name="getWork" visibility="public">
+              <ownedParameter xmi:id="_IAO7F5H0EeOOF-MyncaEGg" name="return" type="_H-l8V5H0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_H-l8WZH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_IA-iNZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_IA-iNpH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IA-iN5H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IA-iOJH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_H-l8WpH0EeOOF-MyncaEGg" name="TeacherWorkFactory" clientDependency="_IA-iOZH0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_IA-iOZH0EeOOF-MyncaEGg" name="IWorkFactory" supplier="_H-l8VpH0EeOOF-MyncaEGg" client="_H-l8WpH0EeOOF-MyncaEGg" contract="_H-l8VpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_IA-iOpH0EeOOF-MyncaEGg" name="getWork" visibility="public">
+              <ownedParameter xmi:id="_IA-iO5H0EeOOF-MyncaEGg" name="return" type="_H-l8V5H0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_H-vtUJH0EeOOF-MyncaEGg" name="StudentWork" clientDependency="_IA-iPJH0EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_IA-iPJH0EeOOF-MyncaEGg" name="IWork" supplier="_H-l8V5H0EeOOF-MyncaEGg" client="_H-vtUJH0EeOOF-MyncaEGg" contract="_H-l8V5H0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_IA-iPZH0EeOOF-MyncaEGg" name="doWork" visibility="public"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

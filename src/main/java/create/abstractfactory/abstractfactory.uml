@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_5-qdwJHzEeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_6BV-lJHzEeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_5-qdwZHzEeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_5-qdwpHzEeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_5-qdw5HzEeOOF-MyncaEGg" name="create">
+        <packagedElement xmi:type="uml:Package" xmi:id="_5-qdxJHzEeOOF-MyncaEGg" name="abstractfactory">
+          <packagedElement xmi:type="uml:Class" xmi:id="_5-qdxZHzEeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_6BV-lZHzEeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_6BV-lpHzEeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6BV-l5HzEeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6BV-mJHzEeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_5-qdxpHzEeOOF-MyncaEGg" name="IAnimal">
+            <ownedOperation xmi:id="_6BV-mZHzEeOOF-MyncaEGg" name="eat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_5-qdx5HzEeOOF-MyncaEGg" name="BlackDog" clientDependency="_6BV-mpHzEeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_6BV-mpHzEeOOF-MyncaEGg" name="IDog" supplier="_5-qdyJHzEeOOF-MyncaEGg" client="_5-qdx5HzEeOOF-MyncaEGg" contract="_5-qdyJHzEeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_6BV-m5HzEeOOF-MyncaEGg" name="eat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_5-qdyJHzEeOOF-MyncaEGg" name="IDog">
+            <generalization xmi:id="_6BV-nJHzEeOOF-MyncaEGg" general="_5-qdxpHzEeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_5-qdyZHzEeOOF-MyncaEGg" name="WhiteCat" clientDependency="_6BV-nZHzEeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_6BV-nZHzEeOOF-MyncaEGg" name="ICat" supplier="_5-qdypHzEeOOF-MyncaEGg" client="_5-qdyZHzEeOOF-MyncaEGg" contract="_5-qdypHzEeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_6BV-npHzEeOOF-MyncaEGg" name="eat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_5-qdypHzEeOOF-MyncaEGg" name="ICat">
+            <generalization xmi:id="_6BV-n5HzEeOOF-MyncaEGg" general="_5-qdxpHzEeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_5-qdy5HzEeOOF-MyncaEGg" name="BlackAnimalFactory" clientDependency="_6BV-oJHzEeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_6BV-oJHzEeOOF-MyncaEGg" name="IAnimalFactory" supplier="_5-qdzZHzEeOOF-MyncaEGg" client="_5-qdy5HzEeOOF-MyncaEGg" contract="_5-qdzZHzEeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_6BV-oZHzEeOOF-MyncaEGg" name="CreateCat" visibility="public">
+              <ownedParameter xmi:id="_6BV-opHzEeOOF-MyncaEGg" name="return" type="_5-qdypHzEeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_6BfvUJHzEeOOF-MyncaEGg" name="CreateDog" visibility="public">
+              <ownedParameter xmi:id="_6BfvUZHzEeOOF-MyncaEGg" name="return" type="_5-qdyJHzEeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_5-qdzJHzEeOOF-MyncaEGg" name="WhiteDog" clientDependency="_6BfvUpHzEeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_6BfvUpHzEeOOF-MyncaEGg" name="IDog" supplier="_5-qdyJHzEeOOF-MyncaEGg" client="_5-qdzJHzEeOOF-MyncaEGg" contract="_5-qdyJHzEeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_6BfvU5HzEeOOF-MyncaEGg" name="eat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_5-qdzZHzEeOOF-MyncaEGg" name="IAnimalFactory">
+            <ownedOperation xmi:id="_6BfvVJHzEeOOF-MyncaEGg" name="CreateCat" visibility="public">
+              <ownedParameter xmi:id="_6BfvVZHzEeOOF-MyncaEGg" name="return" type="_5-qdypHzEeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_6BfvVpHzEeOOF-MyncaEGg" name="CreateDog" visibility="public">
+              <ownedParameter xmi:id="_6BfvV5HzEeOOF-MyncaEGg" name="return" type="_5-qdyJHzEeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_5-0OwJHzEeOOF-MyncaEGg" name="BlackCat" clientDependency="_6BfvWJHzEeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_6BfvWJHzEeOOF-MyncaEGg" name="ICat" supplier="_5-qdypHzEeOOF-MyncaEGg" client="_5-0OwJHzEeOOF-MyncaEGg" contract="_5-qdypHzEeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_6BfvWZHzEeOOF-MyncaEGg" name="eat" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_5-0OwZHzEeOOF-MyncaEGg" name="WhiteAnimalFactory" clientDependency="_6BfvWpHzEeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_6BfvWpHzEeOOF-MyncaEGg" name="IAnimalFactory" supplier="_5-qdzZHzEeOOF-MyncaEGg" client="_5-0OwZHzEeOOF-MyncaEGg" contract="_5-qdzZHzEeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_6BfvW5HzEeOOF-MyncaEGg" name="CreateCat" visibility="public">
+              <ownedParameter xmi:id="_6BfvXJHzEeOOF-MyncaEGg" name="return" type="_5-qdypHzEeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_6BfvXZHzEeOOF-MyncaEGg" name="CreateDog" visibility="public">
+              <ownedParameter xmi:id="_6BfvXpHzEeOOF-MyncaEGg" name="return" type="_5-qdyJHzEeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_msxEYJH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_mu2vVJH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ms61YJH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ms61YZH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ms61YpH1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ms61Y5H1EeOOF-MyncaEGg" name="templatemethod">
+          <packagedElement xmi:type="uml:Class" xmi:id="_ms61ZJH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_mu2vVZH1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mu2vVpH1EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mu2vV5H1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mu2vWJH1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ms61ZZH1EeOOF-MyncaEGg" name="Template" isAbstract="true">
+            <ownedOperation xmi:id="_mu2vWZH1EeOOF-MyncaEGg" name="print" visibility="public" isAbstract="true"/>
+            <ownedOperation xmi:id="_mu2vWpH1EeOOF-MyncaEGg" name="update" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ms61ZpH1EeOOF-MyncaEGg" name="TemplateConcrete">
+            <generalization xmi:id="_mu2vW5H1EeOOF-MyncaEGg" general="_ms61ZZH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_mu_5AJH1EeOOF-MyncaEGg" name="print" visibility="public"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_YeQ-UJH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_YgWCMpH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_YeQ-UZH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_YeQ-UpH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_YeQ-U5H1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_YeQ-VJH1EeOOF-MyncaEGg" name="memento">
+          <packagedElement xmi:type="uml:Class" xmi:id="_YeQ-VZH1EeOOF-MyncaEGg" name="Originator">
+            <ownedAttribute xmi:id="_YgWCM5H1EeOOF-MyncaEGg" name="state" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_YgWCNJH1EeOOF-MyncaEGg" name="getState" visibility="public">
+              <ownedParameter xmi:id="_YgWCNZH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_YgWCNpH1EeOOF-MyncaEGg" name="setState" visibility="public">
+              <ownedParameter xmi:id="_YgWCN5H1EeOOF-MyncaEGg" name="state">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_YgWCOJH1EeOOF-MyncaEGg" name="createMemento" visibility="public">
+              <ownedParameter xmi:id="_YgWCOZH1EeOOF-MyncaEGg" name="return" type="_YeQ-V5H1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ygfy8JH1EeOOF-MyncaEGg" name="setMemento" visibility="public">
+              <ownedParameter xmi:id="_Ygfy8ZH1EeOOF-MyncaEGg" name="memento" type="_YeQ-V5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ygfy8pH1EeOOF-MyncaEGg" name="showState" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_YeQ-VpH1EeOOF-MyncaEGg" name="Caretaker">
+            <ownedAttribute xmi:id="_Ygfy85H1EeOOF-MyncaEGg" name="memento" visibility="private" type="_YeQ-V5H1EeOOF-MyncaEGg" association="_Yh1PsJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_Ygfy9JH1EeOOF-MyncaEGg" name="getMemento" visibility="public">
+              <ownedParameter xmi:id="_Ygfy9ZH1EeOOF-MyncaEGg" name="return" type="_YeQ-V5H1EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ygfy9pH1EeOOF-MyncaEGg" name="setMemento" visibility="public">
+              <ownedParameter xmi:id="_Ygfy95H1EeOOF-MyncaEGg" name="memento" type="_YeQ-V5H1EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_YeQ-V5H1EeOOF-MyncaEGg" name="Memento">
+            <ownedAttribute xmi:id="_Ygfy-JH1EeOOF-MyncaEGg" name="state" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_Ygfy-ZH1EeOOF-MyncaEGg" name="getState" visibility="public">
+              <ownedParameter xmi:id="_Ygfy-pH1EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Ygfy-5H1EeOOF-MyncaEGg" name="setState" visibility="public">
+              <ownedParameter xmi:id="_Ygfy_JH1EeOOF-MyncaEGg" name="state">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_YeaIQJH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_Ygo84JH1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Ygo84ZH1EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ygo84pH1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ygo845H1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_Yh1PsJH1EeOOF-MyncaEGg" memberEnd="_Ygfy85H1EeOOF-MyncaEGg _Yh1PsZH1EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_Yh1PsZH1EeOOF-MyncaEGg" name="Caretaker" type="_YeQ-VpH1EeOOF-MyncaEGg" association="_Yh1PsJH1EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

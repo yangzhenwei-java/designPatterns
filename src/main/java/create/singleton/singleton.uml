@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_N_oRsJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_OB3GgpH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_N_oRsZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_N_oRspH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_N_oRs5H0EeOOF-MyncaEGg" name="create">
+        <packagedElement xmi:type="uml:Package" xmi:id="_N_oRtJH0EeOOF-MyncaEGg" name="singleton">
+          <packagedElement xmi:type="uml:Class" xmi:id="_N_oRtZH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_OB3Gg5H0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_OB3GhJH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OB3GhZH0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OB3GhpH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_N_xboJH0EeOOF-MyncaEGg" name="Singleton">
+            <ownedAttribute xmi:id="_OB3Gh5H0EeOOF-MyncaEGg" name="sing" visibility="private" isStatic="true" type="_N_xboJH0EeOOF-MyncaEGg" association="_ODCyEJH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_OB3GiJH0EeOOF-MyncaEGg" name="getInstance" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_OB3GiZH0EeOOF-MyncaEGg" name="return" type="_N_xboJH0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_ODCyEJH0EeOOF-MyncaEGg" memberEnd="_OB3Gh5H0EeOOF-MyncaEGg _ODCyEZH0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_ODCyEZH0EeOOF-MyncaEGg" name="Singleton" type="_N_xboJH0EeOOF-MyncaEGg" association="_ODCyEJH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

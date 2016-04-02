@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_-95icJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_-_-mJJH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-95icZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_-95icpH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-95ic5H0EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-95idJH0EeOOF-MyncaEGg" name="command">
+          <packagedElement xmi:type="uml:Class" xmi:id="_-95idZH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_-_-mJZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_-_-mJpH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-_-mJ5H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-_-mKJH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-95idpH0EeOOF-MyncaEGg" name="Command" isAbstract="true">
+            <ownedAttribute xmi:id="__AIXEJH0EeOOF-MyncaEGg" name="receiver" visibility="protected" type="_-95ieZH0EeOOF-MyncaEGg" association="__Bdz0JH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="__AIXEZH0EeOOF-MyncaEGg" name="execute" visibility="public" isAbstract="true"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-95id5H0EeOOF-MyncaEGg" name="Invoker">
+            <ownedAttribute xmi:id="__AIXEpH0EeOOF-MyncaEGg" name="command" visibility="private" type="_-95idpH0EeOOF-MyncaEGg" association="__Bdz0pH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="__AIXE5H0EeOOF-MyncaEGg" name="setCommand" visibility="public">
+              <ownedParameter xmi:id="__AIXFJH0EeOOF-MyncaEGg" name="command" type="_-95idpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="__ASIEJH0EeOOF-MyncaEGg" name="execute" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-95ieJH0EeOOF-MyncaEGg" name="CommandImpl">
+            <generalization xmi:id="__ASIEZH0EeOOF-MyncaEGg" general="_-95idpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="__ASIEpH0EeOOF-MyncaEGg" name="execute" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-95ieZH0EeOOF-MyncaEGg" name="Receiver">
+            <ownedOperation xmi:id="__ASIE5H0EeOOF-MyncaEGg" name="receive" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="__Bdz0JH0EeOOF-MyncaEGg" memberEnd="__AIXEJH0EeOOF-MyncaEGg __Bdz0ZH0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="__Bdz0ZH0EeOOF-MyncaEGg" name="Command" type="_-95idpH0EeOOF-MyncaEGg" association="__Bdz0JH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="__Bdz0pH0EeOOF-MyncaEGg" memberEnd="__AIXEpH0EeOOF-MyncaEGg __Bdz05H0EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="__Bdz05H0EeOOF-MyncaEGg" name="Invoker" type="_-95id5H0EeOOF-MyncaEGg" association="__Bdz0pH0EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

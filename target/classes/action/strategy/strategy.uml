@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_jo-jQJH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_jrXI9JH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jo-jQZH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_jo-jQpH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_jo-jQ5H1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_jo-jRJH1EeOOF-MyncaEGg" name="strategy">
+          <packagedElement xmi:type="uml:Class" xmi:id="_jo-jRZH1EeOOF-MyncaEGg" name="IStrategy" isAbstract="true">
+            <ownedOperation xmi:id="_jqniAJH1EeOOF-MyncaEGg" name="method" visibility="public" isAbstract="true"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_jo-jRpH1EeOOF-MyncaEGg" name="StrategyB">
+            <generalization xmi:id="_jqniAZH1EeOOF-MyncaEGg" general="_jo-jRZH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_jqniApH1EeOOF-MyncaEGg" name="method" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_jo-jR5H1EeOOF-MyncaEGg" name="StrategyA">
+            <generalization xmi:id="_jqniA5H1EeOOF-MyncaEGg" general="_jo-jRZH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_jqniBJH1EeOOF-MyncaEGg" name="method" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_jo-jSJH1EeOOF-MyncaEGg" name="Context">
+            <ownedAttribute xmi:id="_jqniBZH1EeOOF-MyncaEGg" name="stra" visibility="package" type="_jo-jRZH1EeOOF-MyncaEGg" association="_jssloJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_jqniBpH1EeOOF-MyncaEGg" name="doMethod" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_jpIUQJH1EeOOF-MyncaEGg" name="StrategyC">
+            <generalization xmi:id="_jqniB5H1EeOOF-MyncaEGg" general="_jo-jRZH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_jqniCJH1EeOOF-MyncaEGg" name="method" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_jpIUQZH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_jrXI9ZH1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_jrXI9pH1EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jrXI95H1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jrXI-JH1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_jssloJH1EeOOF-MyncaEGg" memberEnd="_jqniBZH1EeOOF-MyncaEGg _jssloZH1EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_jssloZH1EeOOF-MyncaEGg" name="Context" type="_jo-jSJH1EeOOF-MyncaEGg" association="_jssloJH1EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

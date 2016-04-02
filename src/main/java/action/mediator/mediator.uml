@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_KSSn0JH1EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_KVRDUJH1EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_KSbxwJH1EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_KSbxwZH1EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_KSbxwpH1EeOOF-MyncaEGg" name="action">
+        <packagedElement xmi:type="uml:Package" xmi:id="_KSbxw5H1EeOOF-MyncaEGg" name="mediator">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_KSbxxJH1EeOOF-MyncaEGg" name="IColleague">
+            <ownedOperation xmi:id="_KUXrcJH1EeOOF-MyncaEGg" name="action" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_KSbxxZH1EeOOF-MyncaEGg" name="Mediator" isAbstract="true">
+            <ownedOperation xmi:id="_KVRDUZH1EeOOF-MyncaEGg" name="notice" visibility="public" isAbstract="true">
+              <ownedParameter xmi:id="_KVRDUpH1EeOOF-MyncaEGg" name="content">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_KSbxxpH1EeOOF-MyncaEGg" name="ColleagueB" clientDependency="_KVRDU5H1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_KVRDU5H1EeOOF-MyncaEGg" name="IColleague" supplier="_KSbxxJH1EeOOF-MyncaEGg" client="_KSbxxpH1EeOOF-MyncaEGg" contract="_KSbxxJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_KVRDVJH1EeOOF-MyncaEGg" name="action" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_KSbxx5H1EeOOF-MyncaEGg" name="ColleagueA" clientDependency="_KVRDVZH1EeOOF-MyncaEGg">
+            <interfaceRealization xmi:id="_KVRDVZH1EeOOF-MyncaEGg" name="IColleague" supplier="_KSbxxJH1EeOOF-MyncaEGg" client="_KSbxx5H1EeOOF-MyncaEGg" contract="_KSbxxJH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_KVRDVpH1EeOOF-MyncaEGg" name="action" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_KSbxyJH1EeOOF-MyncaEGg" name="ConcreteMediator">
+            <generalization xmi:id="_KVRDV5H1EeOOF-MyncaEGg" general="_KSbxxZH1EeOOF-MyncaEGg"/>
+            <ownedAttribute xmi:id="_KVRDWJH1EeOOF-MyncaEGg" name="ca" visibility="private" type="_KSbxx5H1EeOOF-MyncaEGg" association="_KWmgEJH1EeOOF-MyncaEGg"/>
+            <ownedAttribute xmi:id="_KVRDWZH1EeOOF-MyncaEGg" name="cb" visibility="private" type="_KSbxxpH1EeOOF-MyncaEGg" association="_KWmgEpH1EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_KVRDWpH1EeOOF-MyncaEGg" name="notice" visibility="public">
+              <ownedParameter xmi:id="_KVRDW5H1EeOOF-MyncaEGg" name="content">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_KSbxyZH1EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_KVaNQJH1EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_KVaNQZH1EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KVaNQpH1EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KVaNQ5H1EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_KWmgEJH1EeOOF-MyncaEGg" memberEnd="_KVRDWJH1EeOOF-MyncaEGg _KWmgEZH1EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_KWmgEZH1EeOOF-MyncaEGg" name="ConcreteMediator" type="_KSbxyJH1EeOOF-MyncaEGg" association="_KWmgEJH1EeOOF-MyncaEGg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_KWmgEpH1EeOOF-MyncaEGg" memberEnd="_KVRDWZH1EeOOF-MyncaEGg _KWmgE5H1EeOOF-MyncaEGg">
+            <ownedEnd xmi:id="_KWmgE5H1EeOOF-MyncaEGg" name="ConcreteMediator" type="_KSbxyJH1EeOOF-MyncaEGg" association="_KWmgEpH1EeOOF-MyncaEGg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

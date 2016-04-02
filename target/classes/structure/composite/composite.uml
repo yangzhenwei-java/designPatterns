@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_lgNnIJH0EeOOF-MyncaEGg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_limNBJH0EeOOF-MyncaEGg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_lgNnIZH0EeOOF-MyncaEGg" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_lgNnIpH0EeOOF-MyncaEGg" name="study">
+      <packagedElement xmi:type="uml:Package" xmi:id="_lgNnI5H0EeOOF-MyncaEGg" name="structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_lgNnJJH0EeOOF-MyncaEGg" name="composite">
+          <packagedElement xmi:type="uml:Class" xmi:id="_lgNnJZH0EeOOF-MyncaEGg" name="ProjectAssistant">
+            <generalization xmi:id="_lh2l5JH0EeOOF-MyncaEGg" general="_lgXYIpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_lh2l5ZH0EeOOF-MyncaEGg" name="add" visibility="public">
+              <ownedParameter xmi:id="_lh2l5pH0EeOOF-MyncaEGg" name="employee" type="_lgXYIpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_lh2l55H0EeOOF-MyncaEGg" name="delete" visibility="public">
+              <ownedParameter xmi:id="_lh2l6JH0EeOOF-MyncaEGg" name="employee" type="_lgXYIpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_lgXYIJH0EeOOF-MyncaEGg" name="Programmer">
+            <generalization xmi:id="_lh2l6ZH0EeOOF-MyncaEGg" general="_lgXYIpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_lh2l6pH0EeOOF-MyncaEGg" name="add" visibility="public">
+              <ownedParameter xmi:id="_lh2l65H0EeOOF-MyncaEGg" name="employee" type="_lgXYIpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_lh2l7JH0EeOOF-MyncaEGg" name="delete" visibility="public">
+              <ownedParameter xmi:id="_lh2l7ZH0EeOOF-MyncaEGg" name="employee" type="_lgXYIpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_lgXYIZH0EeOOF-MyncaEGg" name="Test">
+            <ownedOperation xmi:id="_limNBZH0EeOOF-MyncaEGg" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_limNBpH0EeOOF-MyncaEGg" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_limNB5H0EeOOF-MyncaEGg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_limNCJH0EeOOF-MyncaEGg"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_lgXYIpH0EeOOF-MyncaEGg" name="Employee" isAbstract="true">
+            <ownedAttribute xmi:id="_limNCZH0EeOOF-MyncaEGg" name="name" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_livWsZH0EeOOF-MyncaEGg" name="employees" visibility="private" type="_livWsJH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_livWspH0EeOOF-MyncaEGg" name="getName" visibility="public">
+              <ownedParameter xmi:id="_livWs5H0EeOOF-MyncaEGg" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_livWtJH0EeOOF-MyncaEGg" name="setName" visibility="public">
+              <ownedParameter xmi:id="_livWtZH0EeOOF-MyncaEGg" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_livWtpH0EeOOF-MyncaEGg" name="getEmployees" visibility="public">
+              <ownedParameter xmi:id="_livWt5H0EeOOF-MyncaEGg" name="return" type="_lh2l4pH0EeOOF-MyncaEGg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_livWuJH0EeOOF-MyncaEGg" name="setEmployees" visibility="public">
+              <ownedParameter xmi:id="_livWuZH0EeOOF-MyncaEGg" name="employees" type="_lh2l4pH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_livWupH0EeOOF-MyncaEGg" name="add" visibility="public" isAbstract="true">
+              <ownedParameter xmi:id="_livWu5H0EeOOF-MyncaEGg" name="employee" type="_lgXYIpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_livWvJH0EeOOF-MyncaEGg" name="delete" visibility="public" isAbstract="true">
+              <ownedParameter xmi:id="_livWvZH0EeOOF-MyncaEGg" name="employee" type="_lgXYIpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_livWvpH0EeOOF-MyncaEGg" name="printInfo" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_lgXYI5H0EeOOF-MyncaEGg" name="ProjectManager">
+            <generalization xmi:id="_livWv5H0EeOOF-MyncaEGg" general="_lgXYIpH0EeOOF-MyncaEGg"/>
+            <ownedOperation xmi:id="_livWwJH0EeOOF-MyncaEGg" name="add" visibility="public">
+              <ownedParameter xmi:id="_livWwZH0EeOOF-MyncaEGg" name="employee" type="_lgXYIpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_livWwpH0EeOOF-MyncaEGg" name="delete" visibility="public">
+              <ownedParameter xmi:id="_livWw5H0EeOOF-MyncaEGg" name="employee" type="_lgXYIpH0EeOOF-MyncaEGg"/>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_lh2l4JH0EeOOF-MyncaEGg" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_lh2l4ZH0EeOOF-MyncaEGg" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_lh2l4pH0EeOOF-MyncaEGg" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_lh2l45H0EeOOF-MyncaEGg" name="ArrayList"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_livWsJH0EeOOF-MyncaEGg" name="List&lt;Employee>"/>
+</uml:Model>
